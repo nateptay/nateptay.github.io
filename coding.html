@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Nathan Taylor Portfolio</title>
+    <meta name="description" content="Web Portfolio for Nathan Taylor"/>
+
+    <!-- Stylesheets, inlcuding custom fonts, go here -->
+    <link rel="stylesheet" href="style.css" type="text/css" media="all">
+</head>
+
+<body>
+    <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+    <header class="masthead">
+        <div class="site-branding">
+            <h1 class="site-title"><a href="index.html">Nathan Taylor Portfolio</a></h1>
+        </div><!-- .site-title -->
+        <nav id="site-navigation" class="main-navigation" role="navigation">
+            <!-- Mobile menu toggle button -->
+            <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">Menu</button>
+            <!-- Main Menu -->
+            <div class="menu-main-menu-container">
+                <ul id="primary-menu" class="nav-menu">
+                    <li class="menu-item current-menu-item"><a href="index.html">Home</a></li>
+                    <li class="menu-item menu-item-has-children">
+                        <a href="designs.html">Designs</a>
+                        <ul class="sub-menu">
+                            <li class="menu-item"><a href="designs.html">Design 1</a></li>
+                            <li class="menu-item"><a href="designs.html">Kid Design</a></li>
+                            <li class="menu-item"><a href="designs.html">Gallery Design</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a href="coding.html">Coding</a></li>
+                    <li class="menu-item"><a href="about.html">About</a></li>
+                    <li class="menu-item"><a href="contact.html">Contact</a></li>
+                </ul></div>
+        </nav>
+    </header><!-- .masthead -->
+
+    <div class="content">
+        <h1>Coding Projects</h1>
+        <main class="main-area">
+            <div class="code-tile-set">
+                <div class="code-tile">
+                    <h2>Lucky Spin</h2>
+                    <h3>Finished in January, 2020</h3>
+                    <a href="#">More</a>
+                </div><!-- .code-tile-->
+                <div class="code-tile">
+                    <h2>Secret of the Deep</h2>
+                    <h3>Finished in December, 2018</h3>
+                    <a href="#">More</a>
+                </div><!-- .code-tile-->
+                <div class="code-tile">
+                    <h2>Lucky Spin</h2>
+                    <h3>Finished in April, 2017</h3>
+                    <a href="#">More</a>
+                </div><!-- .code-tile-->
+            </div><!-- .code-tile-set -->
+            <div class="contact">
+                <h2>Contact</h2>
+                <span>Email </span><input /><br />
+                <span>Reason </span>
+                <select>
+                    <option>Coding Inquiry</option>
+                    <option>Design Inquiry</option>
+                    <option>Other</option>
+                </select><br />
+                <span>Message Here </span><input /> <br />
+                <button>Send</button>
+            </div><!-- contact form-->
+        </main><!-- .main-area -->
+    </div><!-- .content -->
+
+    <footer class="footer-area">
+        © Copyright 2020 Nathan Taylor
+    </footer>
+
+    <!-- Scripts for accessible mobile-first navigation -->
+    <script   src="https://code.jquery.com/jquery-3.4.1.min.js"   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="   crossorigin="anonymous"></script>
+    <script type="text/javascript" src="JS/navigation.js"></script>
+</body>
+
+</html>
