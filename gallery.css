@@ -1,0 +1,82 @@
+.gallery {
+    margin: 3em;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 15vw);
+    grid-gap: 15px;
+}
+.gal-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.gal-img:hover {
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+    filter: brightness(1.1);
+    animation-name: hoverHL; /*Hover Highlight*/
+    animation-duration: 200ms;
+    cursor: pointer;
+}
+
+.gal-spot-1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.gal-spot-2 {
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.gal-spot-5 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.gal-spot-7 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+.gal-spot-9 {
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+/* Flippable images */
+.gal-spot {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 0.7s;
+}
+.gal-text {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;    
+    overflow: hidden;
+}
+.gal-text a {
+    background-color: rgba(255, 255, 255, 0.75);
+    color: black;
+}
+
+
+@keyframes hoverHL {
+    0% {
+        filter: brightness(1);
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 1);
+    }
+    100% {
+        filter: brightness(1.1);
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+    }
+}
