@@ -1,3 +1,8 @@
+:root {
+  --filter-saturation: 1;
+  --filter-brightness: 0.5;
+}
+
 .gallery {
     margin: 3em;
     display: grid;
@@ -12,37 +17,36 @@
 }
 .gal-img:hover {
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
-    filter: brightness(1.1);
+    filter: opacity(var(--filter-brightness)) saturate(var(--filter-saturation));
     animation-name: hoverHL; /*Hover Highlight*/
     animation-duration: 200ms;
-    cursor: pointer;
 }
 
-.gal-spot-1 {
+.gal-box-1 {
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 3;
 }
-.gal-spot-2 {
+.gal-box-2 {
     grid-column-start: 4;
     grid-column-end: 6;
     grid-row-start: 1;
     grid-row-end: 3;
 }
-.gal-spot-5 {
+.gal-box-5 {
     grid-column-start: 3;
     grid-column-end: 5;
     grid-row-start: 3;
     grid-row-end: 4;
 }
-.gal-spot-7 {
+.gal-box-7 {
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 4;
     grid-row-end: 5;
 }
-.gal-spot-9 {
+.gal-box-9 {
     grid-column-start: 4;
     grid-column-end: 6;
     grid-row-start: 4;
@@ -50,7 +54,7 @@
 }
 
 /* Flippable images */
-.gal-spot {
+.gal-box {
     position: relative;
     transform-style: preserve-3d;
     transition: 0.7s;
@@ -72,11 +76,11 @@
 
 @keyframes hoverHL {
     0% {
-        filter: brightness(1);
+        filter: opacity(1) saturate(1);
         box-shadow: 0px 0px 0px rgba(0, 0, 0, 1);
     }
     100% {
-        filter: brightness(1.1);
+        filter: opacity(var(--filter-brightness)) saturate(var(--filter-saturation));
         box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
     }
 }
