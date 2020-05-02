@@ -15,9 +15,9 @@
     height: 100%;
     object-fit: cover;
 }
-.gal-img:hover {
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
-    filter: opacity(var(--filter-brightness)) saturate(var(--filter-saturation));
+.gal-box:hover {
+    filter: opacity(var(--filter-brightness));
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.7);
     animation-name: hoverHL; /*Hover Highlight*/
     animation-duration: 200ms;
 }
@@ -58,29 +58,34 @@
     position: relative;
     transform-style: preserve-3d;
     transition: 0.7s;
+    text-align: center;
+    overflow: hidden;
 }
 .gal-text {
-    text-align: center;
     width: 100%;
     height: 100%;
-    position: absolute;
     z-index: 2;
-    cursor: pointer;    
-    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
 }
 .gal-text a {
     background-color: rgba(255, 255, 255, 0.75);
     color: black;
+    bottom: 5px;
+    padding: 10px 1em;
 }
 
 
 @keyframes hoverHL {
     0% {
-        filter: opacity(1) saturate(1);
+        filter: opacity(1);
         box-shadow: 0px 0px 0px rgba(0, 0, 0, 1);
     }
     100% {
-        filter: opacity(var(--filter-brightness)) saturate(var(--filter-saturation));
+        filter: opacity(var(--filter-brightness));
         box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
     }
 }
