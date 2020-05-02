@@ -15,13 +15,12 @@
     height: 100%;
     object-fit: cover;
 }
-.gal-box:hover {
-    filter: opacity(var(--filter-brightness));
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.7);
-    animation-name: hoverHL; /*Hover Highlight*/
-    animation-duration: 200ms;
+.gal-box h3 {
+    font-size: 1.4em;
 }
-
+.gal-box h4 {
+    font-size: 1.1em;
+}
 .gal-box-1 {
     grid-column-start: 1;
     grid-column-end: 4;
@@ -68,24 +67,59 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    opacity: 0;
+    transform: translate(-50%, -50%)/* rotatey(180deg)*/;
     
 }
 .gal-text a {
     background-color: rgba(255, 255, 255, 0.75);
     color: black;
-    bottom: 5px;
+    bottom: 1em;
     padding: 10px 1em;
 }
-
-
+.gal-text:hover {
+    color: black;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid white;
+    transform-style: preserve-3d;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+    opacity: 100%;
+    animation-name: hoverHL; /*Hover Highlight*/
+    animation-duration: 200ms;
+}
+.gal-text:hover h1, .gal-text:hover h3 {
+    margin: 0;
+    padding: 1.5em;
+    background-color: rgba(200, 240, 255, 0.7);
+    opacity: 1;
+    animation-name: headerHover; /*Hover Highlight*/
+    animation-duration: 500ms;
+}
+.gal-text:hover h2, .gal-text:hover h4 {
+    padding: 1em;
+    background-color: rgba(240, 200, 255, 0.7);
+    opacity: 1;
+    animation-name: headerHover; /*Hover Highlight*/
+    animation-duration: 500ms;
+}
 @keyframes hoverHL {
     0% {
-        filter: opacity(1);
+        opacity: 0;
+        border: 0px solid white;
         box-shadow: 0px 0px 0px rgba(0, 0, 0, 1);
     }
     100% {
-        filter: opacity(var(--filter-brightness));
+        opacity: 100%;
+        border: 2px solid white;
         box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+    }
+}
+@keyframes headerHover {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
