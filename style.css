@@ -28,9 +28,13 @@ The primary stylesheet for Oolith. This sheet pulls in all the components in ord
 }
 
 .hex-text {
+    background-color: rgba(27, 187, 217, 0.9);
     margin: auto;
     margin: 0.5em auto;
     padding: 10%;
+}
+.hex-text:hover {
+    background-color: hsla(183, 50%, 70%, 0.9);
 }
 
 .hexagon a {
