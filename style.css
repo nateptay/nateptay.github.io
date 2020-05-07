@@ -2,13 +2,13 @@
 The primary stylesheet for Oolith. This sheet pulls in all the components in order of appearance.
 */
 
-@import url('CSS/reset.css');
-@import url('CSS/accessibility.css');
-@import url('CSS/layout.css');
-@import url('CSS/typography.css');
-@import url('CSS/masthead.css');
-@import url('CSS/navigation.css');
-@import url('CSS/images.css');
+@import url('css/reset.css');
+@import url('css/accessibility.css');
+@import url('css/layout.css');
+@import url('css/typography.css');
+@import url('css/masthead.css');
+@import url('css/navigation.css');
+@import url('css/images.css');
 
 .site-title a {
     font-size: 0.7em;

@@ -43,21 +43,21 @@
     <div class="content">
         <h1>Welcome</h1>
         <main class="main-area">
-            <div class="hexagon">
+            <div id="hex1" class="hexagon">
                 <a href="designs.html">
                     <div class="hex-text">
                         <p>Design</p>
                     </div>
                 </a>
             </div>
-            <div class="hexagon">
+            <div id="hex2" class="hexagon">
                 <a href="coding.html">
                     <div class="hex-text">
                         <p>Coding</p>
                     </div>
                 </a>
             </div>
-            <div class="hexagon">
+            <div id="hex3" class="hexagon">
                 <a href="about.html">
                     <div class="hex-text">
                         <p>About</p>
@@ -74,7 +74,17 @@
 
     <!-- Scripts for accessible mobile-first navigation -->
     <script   src="https://code.jquery.com/jquery-3.4.1.min.js"   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="   crossorigin="anonymous"></script>
-    <script type="text/javascript" src="JS/navigation.js"></script>
+    <script type="text/javascript" src="js/navigation.js"></script>
+    
+    <script src="js/gsap.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        (function() {
+            var tl1 = new TimelineMax();
+            tl1.from('#hex1.hexagon', 1, {opacity: 0, y: 100})
+            .from('#hex2.hexagon', 1, {opacity: 0, y: 100}, '-=0.75')
+            .from('#hex3.hexagon', 1, {opacity: 0, y: 100}, '-=0.75');
+        }());
+    </script>
 </body>
 
 </html>
