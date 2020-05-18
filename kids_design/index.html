@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Shape Space | Home</title>
+    <meta name="description" content="A space for shaping - Design by Nathan Taylor"/>
+
+    <!-- Stylesheets, inlcuding custom fonts, go here -->
+    <link rel="stylesheet" href="styles.css" type="text/css" media="all">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="index.html"><img class="logo" src="images/ShapeSpaceLogoSmall.png"></a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="">
+                        <div class="nav-item">
+                            <img src="images/icon_home.png">
+                            <p>Home</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="games.html">
+                        <div class="nav-item">
+                            <img src="images/icon_games.png">
+                            <p>Games</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#printouts">
+                        <div class="nav-item">
+                            <img src="images/icon_print.png">
+                            <p>Printouts</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div id="main">
+        <div class="container">
+            <a class="left" onclick="nextSlides(-1)" alt="Last"><p>&lt</p></a>
+            <a class="right" onclick="nextSlides(1)" alt="Next"><p>&gt</p></a>
+            <div class="mySlides">
+                <a href="#slider_box"><img src="images/background_box.png" style="width:100%"></a>
+            </div>
+
+            <div class="mySlides">
+                <a href="#slider_round"><img src="images/background_round.png" style="width:100%"></a>
+            </div>
+
+            <div class="mySlides">
+                <a href="#slider_triangle"><img src="images/background_triangle.png" style="width:100%"></a>
+            </div>
+        </div>
+        
+        <h1>About</h1>
+        <div id="about">
+            <p>Some about text that will eventually be informational and talk about the site's purpose</p>
+            <img src="images/roundy_sprites.png">
+        </div>
+    </div> <!--End Main -->
+    
+    <footer class="footer-area">
+        © Copyright 2020 Nathan Taylor
+    </footer>
+
+    <!-- Scripts for accessible mobile-first navigation -->
+    <script   src="https://code.jquery.com/jquery-3.4.1.min.js"   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="   crossorigin="anonymous"></script>
+    <script type="text/javascript" src="JS/navigation.js"></script>
+    
+    <!-- Slider script -->
+    <script>
+        var slide = 1;
+        showSlides(slide);
+
+        function nextSlides(n) {
+          showSlides(slide += n);
+        }
+
+        function currentSlide(n) {
+          showSlides(slide = n);
+        }
+
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          var captionText = document.getElementById("caption");
+          if (n > slides.length) {slide = 1}
+          if (n < 1) {slide = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slide-1].style.display = "block";
+          dots[slide-1].className += " active";
+          captionText.innerHTML = dots[slide-1].alt;
+        }
+    </script>
+
+</body>
+
+</html>
