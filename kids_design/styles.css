@@ -1,0 +1,190 @@
+/*****************
+      Fonts
+*****************/
+@font-face { font-family: 'Alloy Ink'; src: url('fonts/AlloyInk-lgdWw.otf'); } 
+@font-face { font-family: 'Alloy Ink'; src: url('fonts/AlloyInk-lgdWw.ttf'); } 
+body {
+    font-family: sans-serif;
+    background-color: #2576FF;
+}
+h1, h2 {
+    font-family: 'Alloy Ink', monospace;
+}
+h3, h4, h5, h6, nav {
+    font-family: 'Bubblegum Sans', cursive;
+}
+#main {
+    margin: 3em;
+}
+/*****************
+    Header
+*****************/
+/* Add some separation between header and body content */
+header {
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25);
+    background: rgba(255, 255, 255, 0.5);
+}
+/* Format navigation text */
+nav a {
+    text-decoration: none;
+    font-size: 1.5em;
+}
+/* Remove list styling */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 5px;
+}
+/* Line the navigation elements horizontally */
+nav li {
+    float: left;
+    margin: 0 0.5em;
+}
+/* line up the header images */
+header img, header nav{
+    display: inline-block;
+}
+/* Style the text */
+.nav-item {
+    color: black;
+    text-align: center;
+    padding: 0px 10px;
+}
+/* Remove the extra spacing around the text */
+.nav-item h2 {
+    margin: 0;
+}
+/* Show which item is being hovered over */
+.nav-item:hover {
+    color: orange;
+    animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both;
+    transform: rotate(0deg);
+}
+
+/*****************
+     Slider
+*****************/
+/* Positioning for the container */
+.container {
+    background-color: #25FF7F;
+    margin-top: 3em;
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    box-shadow: inset 0 0 10px #000000;
+}
+.container img {
+    vertical-align: middle;
+}
+/* Left & right buttons */
+.left,
+.right {
+    font-family: 'Alloy Ink', monospace;
+    cursor: pointer;
+    position: absolute;
+    width: auto;
+    height: 100%;
+    text-align: center;
+    padding: 16px;
+    color: orange;
+    text-shadow: 2px 2px black;
+    font-weight: bold;
+    font-size: 5em;
+    border-radius: 0 3px 3px 0;
+}
+/* Put the right button on the right */
+.right {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+/* On hover, slight background with the orange font */
+.left:hover,
+.right:hover {
+    color: hsla(39, 100%, 70%, 1);
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+/*****************
+     Games
+*****************/
+.games {
+    margin: 2em;
+    align-items: space-between;
+}
+.game {
+    display: inline-block;
+    position: relative;
+    width: 30%;
+    margin: 1%;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.75);
+    background-color: white;
+    padding: 5px;
+}
+.game:nth-child(n) {
+    transform: rotate(2deg);
+}
+.game:nth-child(2n+0) {
+    transform: rotate(-2deg);
+}
+.game:nth-child(3n+0) {
+    transform: rotate(1deg);
+}
+.game:nth-child(4n+0) {
+    transform: rotate(-1deg);
+}
+
+.game img {
+    width: 100%;
+    margin: 0;
+}
+.game h3 {
+    margin: 0;
+    padding: 15px;
+    font-size: 1.7em;
+}
+.game:hover {
+    animation: sm_shake 0.82s cubic-bezier(.36,.07,.19,.97) forwards;
+    cursor: pointer;
+}
+
+/*****************
+     About
+*****************/
+#about {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.25);
+}
+#about h1 {
+    font-size: 5em;
+    width: 50%;
+    background: url(images/button_sprites.png) 0 0;
+    background-size: cover;
+    margin: 1em auto 0 auto;
+    transform: translate(0px, -40px);
+}
+.roundy {
+    padding-left: 20%;
+}
+#shock {
+    display: none;
+}
+#happy {
+    display: block;
+}
+@keyframes shake {
+    25%, 75% {
+        transform: rotate(15deg);
+    }
+    50% {
+        transform: rotate(-15deg);
+    }
+}
+@keyframes sm_shake {
+    25%, 75% {
+        transform: rotate(4deg);
+    }
+    50% {
+        transform: rotate(-4deg);
+    }
+}
+

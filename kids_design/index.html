@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Shape Space | Home</title>
+    <meta name="description" content="A space for shaping - Design by Nathan Taylor"/>
+
+    <!-- Stylesheets, inlcuding custom fonts, go here -->
+    <link rel="stylesheet" href="styles.css" type="text/css" media="all">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
+</head>
+<body style="background-color: #2576FF; background-image: url(images/background_round.png)">
+    <header>
+        <a href="index.html"><img class="logo" src="images/ShapeSpaceLogoSmallOutline.png"></a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="">
+                        <div class="nav-item">
+                            <img src="images/icon_home.png">
+                            <h2>Home</h2>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="games.html">
+                        <div class="nav-item">
+                            <img src="images/icon_games.png">
+                            <h2>Games</h2>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="printouts.html">
+                        <div class="nav-item">
+                            <img src="images/icon_print.png">
+                            <h2>Printouts</h2>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div id="main">
+        <div class="container">
+            <a class="left" onclick="nextSlides(-1)" alt="Last"><p>&lt</p></a>
+            <a class="right" onclick="nextSlides(1)" alt="Next"><p>&gt</p></a>
+            <div class="mySlides">
+                <a href="#about"><img src="images/banner_about.png" style="width:100%"></a>
+            </div>
+            
+            <div class="mySlides">
+                <a href="games.html"><img src="images/banner_games.png" style="width:100%"></a>
+            </div>
+
+            <div class="mySlides">
+                <a href="printouts.html"><img src="images/banner_coloring.png" style="width:100%"></a>
+            </div>
+        </div>
+        
+        <div id="about">
+        <h1>About</h1>
+            <p>Some about text that will eventually be informational and talk about the site's purpose</p>
+            <div class="roundy" >
+                <a onclick="shock()">
+                    <img id="happy" src="images/roundy_happy.png">
+                    <img id="shock" src="images/roundy_shocked.png">
+                </a>
+            </div>
+        </div>
+    </div> <!--End Main -->
+    
+    <footer class="footer-area">
+        © Copyright 2020 <a href="https://nateptay.github.io/designs.html">Nathan Taylor</a>
+    </footer>
+
+    <!-- Scripts for accessible mobile-first navigation -->
+    <script   src="https://code.jquery.com/jquery-3.4.1.min.js"   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="   crossorigin="anonymous"></script>
+    <script type="text/javascript" src="JS/navigation.js"></script>
+    
+    <!-- Slider script -->
+    <script>
+        var slide = 1;
+        showSlides(slide);
+
+        function nextSlides(n) {
+            showSlides(slide += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slide = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) {
+                slide = 1
+            }
+            if (n < 1) {
+                slide = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slide-1].style.display = "block";
+            dots[slide-1].className += " active";
+            captionText.innerHTML = dots[slide-1].alt;
+        }
+    </script>
+    
+    <!-- Easter Egg Script -->
+    <script>
+        function shock() {
+            var x = document.getElementById("happy");
+            var y = document.getElementById("shock");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+                y.style.display = "none";
+            } else {
+                x.style.display = "none";
+                y.style.display = "block";
+            }
+        }
+    </script>
+</body>
+
+</html>
