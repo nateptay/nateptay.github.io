@@ -64,9 +64,6 @@ header img, header nav{
 /*****************
      Slider
 *****************/
-.container img {
-    vertical-align: middle;
-}
 /* Positioning for the container */
 .container {
     background-color: #25FF7F;
@@ -74,6 +71,10 @@ header img, header nav{
     position: relative;
     height: 400px;
     overflow: hidden;
+    box-shadow: inset 0 0 10px #000000;
+}
+.container img {
+    vertical-align: middle;
 }
 /* Left & right buttons */
 .left,
@@ -143,10 +144,11 @@ header img, header nav{
 }
 .game:hover {
     animation: sm_shake 0.82s cubic-bezier(.36,.07,.19,.97) forwards;
+    cursor: pointer;
 }
 
 /*****************
-     Games
+     About
 *****************/
 #about {
     text-align: center;
@@ -160,7 +162,15 @@ header img, header nav{
     margin: 1em auto 0 auto;
     transform: translate(0px, -40px);
 }
-
+.roundy {
+    padding-left: 20%;
+}
+#shock {
+    display: none;
+}
+#happy {
+    display: block;
+}
 @keyframes shake {
     25%, 75% {
         transform: rotate(15deg);

@@ -35,7 +35,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#printouts">
+                    <a href="printouts.html">
                         <div class="nav-item">
                             <img src="images/icon_print.png">
                             <h2>Printouts</h2>
@@ -51,22 +51,27 @@
             <a class="left" onclick="nextSlides(-1)" alt="Last"><p>&lt</p></a>
             <a class="right" onclick="nextSlides(1)" alt="Next"><p>&gt</p></a>
             <div class="mySlides">
-                <a href="#slider_box"><img src="images/background_box.png" style="width:100%"></a>
+                <a href="#about"><img src="images/banner_about.png" style="width:100%"></a>
+            </div>
+            
+            <div class="mySlides">
+                <a href="games.html"><img src="images/banner_games.png" style="width:100%"></a>
             </div>
 
             <div class="mySlides">
-                <a href="#slider_round"><img src="images/background_round.png" style="width:100%"></a>
-            </div>
-
-            <div class="mySlides">
-                <a href="#slider_triangle"><img src="images/background_triangle.png" style="width:100%"></a>
+                <a href="#slide_box"><img src="images/banner_coloring.png" style="width:100%"></a>
             </div>
         </div>
         
         <div id="about">
         <h1>About</h1>
             <p>Some about text that will eventually be informational and talk about the site's purpose</p>
-            <img src="images/roundy_sprites.png">
+            <div class="roundy" >
+                <a onclick="shock()">
+                    <img id="happy" src="images/roundy_happy.png">
+                    <img id="shock" src="images/roundy_shocked.png">
+                </a>
+            </div>
         </div>
     </div> <!--End Main -->
     
@@ -84,32 +89,50 @@
         showSlides(slide);
 
         function nextSlides(n) {
-          showSlides(slide += n);
+            showSlides(slide += n);
         }
 
         function currentSlide(n) {
-          showSlides(slide = n);
+            showSlides(slide = n);
         }
 
         function showSlides(n) {
-          var i;
-          var slides = document.getElementsByClassName("mySlides");
-          var dots = document.getElementsByClassName("demo");
-          var captionText = document.getElementById("caption");
-          if (n > slides.length) {slide = 1}
-          if (n < 1) {slide = slides.length}
-          for (i = 0; i < slides.length; i++) {
-              slides[i].style.display = "none";
-          }
-          for (i = 0; i < dots.length; i++) {
-              dots[i].className = dots[i].className.replace(" active", "");
-          }
-          slides[slide-1].style.display = "block";
-          dots[slide-1].className += " active";
-          captionText.innerHTML = dots[slide-1].alt;
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) {
+                slide = 1
+            }
+            if (n < 1) {
+                slide = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slide-1].style.display = "block";
+            dots[slide-1].className += " active";
+            captionText.innerHTML = dots[slide-1].alt;
         }
     </script>
-
+    
+    <!-- Easter Egg Script -->
+    <script>
+        function shock() {
+            var x = document.getElementById("happy");
+            var y = document.getElementById("shock");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+                y.style.display = "none";
+            } else {
+                x.style.display = "none";
+                y.style.display = "block";
+            }
+        }
+    </script>
 </body>
 
 </html>
