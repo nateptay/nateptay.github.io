@@ -6,7 +6,6 @@
 body {
     font-family: sans-serif;
     background-color: #2576FF;
-    margin: 3em;
 }
 h1, h2 {
     font-family: 'Alloy Ink', monospace;
@@ -14,7 +13,9 @@ h1, h2 {
 h3, h4, h5, h6, nav {
     font-family: 'Bubblegum Sans', cursive;
 }
-
+#main {
+    margin: 3em;
+}
 /*****************
     Header
 *****************/
