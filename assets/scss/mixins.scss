@@ -1,0 +1,9 @@
+@mixin backImage($image) {
+    background: linear-gradient( to bottom,
+        rgba(255, 255, 255, 0.5),
+        rgba(27, 187, 217, 0.9)),
+        url($image);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}

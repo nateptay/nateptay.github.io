@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "description": "This is my portfolio project",
+  "main": "index.html",
+  "authors": [
+    "Nathan Taylor"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/nateptay/nateptay.github.io",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bourbon": "^7.0.0",
+    "susy": "^3.0.5",
+    "normalize-css": "^8.0.1"
+  }
+}

@@ -1,0 +1,23 @@
+body {
+  background-color: #FFFFEE; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #1234BA; }
+
+.masthead {
+  background-color: #12AB43; }
+  .masthead a {
+    color: #DDDDEE; }
+
+.hex-text {
+  background-color: rgba(0, 0, 0, 0); }
+  #hex1 .hex-text {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(27, 187, 217, 0.9)), url("../images/gallery.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; }
+  #hex2 .hex-text {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(27, 187, 217, 0.9)), url("../kids_design/images/banner_about.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; }
