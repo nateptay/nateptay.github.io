@@ -1,0 +1,32 @@
+@import "global.css";
+@import "navigation.css";
+@import "typography.css";
+
+.article {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 95%;
+    margin: 2.5%;
+    padding: 1.5%;
+    position: relative;
+    display: inline-block;
+    font-size: 1.5em;
+}
+.article img {
+    float: left;
+    width: auto;
+    height: 400px;
+    margin-right: 10px;
+}
+.article .description {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.images {
+    display: flex;
+    justify-content: space-between;
+    margin: 2.5%;
+}
+.images img {
+    width: 20%;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AOS Experimentation Site</title>
+    <!-- Links -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <a href="#"><img class="logo" src="images/flogo.png" alt="fancy logo"></a>
+        <div class="menu-container">
+            <div class="menu-burger-box" id="menu-burger-box" onclick="toggleMenu()">
+                <div class="menu-burger"></div>
+            </div>
+            <ul class="navigation" id="navigation">
+                <a href="#home" class="selected"><li>Home</li></a>
+                <a href="#about"><li>Why AOS</li></a>
+                <a href="#inspiration"><li>Inspiration</li></a>
+                <!-- https://www.mcube.fr/projets/
+                     https://www.questionpro.com/ -->
+                <a href="#library"><li>AOS Library</li></a>
+            </ul>
+        </div>
+    </header>
+        
+    <div class="content">
+        <div class="article">
+            <img src="images/art1.png" alt="First article image">
+            <div class="description">
+                <h2>Title For Article 1</h2>
+                <p>Description for article 1 that talks about what the article includes. It's really a great describer and it has some information about the first article. It might be the opening paragraph of the article, depending on whether or not that article had a description provided for it.</p>
+            </div>
+        </div>
+        <div class="article">
+            <img src="images/art2.png" alt="Second article image">
+            <div class="description">
+                <h2>Title For Article 2</h2>
+                <p>Description for article 2 that talks about what sorts of things the article includes. It really is a magnificent describer with some information about the first article. It might just be the opening paragraph of the article, depending on whether or not that article had a description provided for it.</p>
+            </div>
+        </div>
+        <div class="images">
+            <img src="images/img1.png" alt="image face smile 1">
+            <img src="images/img2.png" alt="image face smile 2">
+            <img src="images/img3.png" alt="image face smile 3">
+            <img src="images/img4.png" alt="image face smile 4">
+        </div>
+    </div>
+    
+    <footer>
+        <a target="_blank" href="https://nateptay.github.io/designs.html">© Copyright 2020 Nathan Taylor</a>
+    </footer>
+    
+    <script>
+    function toggleMenu() {
+        var burgbutton = document.getElementById("menu-burger-box");
+        var nav = document.getElementById("navigation");
+        if (nav.style.display==="block") {
+            nav.style.display = "none";
+            burgbutton.classList.remove('open');
+        }
+        else {
+            nav.style.display = "block";
+            burgbutton.classList.add('open');
+        }
+    }
+    </script>
+</body>
+</html>

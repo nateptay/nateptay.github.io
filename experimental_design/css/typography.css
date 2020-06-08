@@ -1,0 +1,31 @@
+@font-face {
+    font-family: "Armata";
+    src: url("../fonts/Armata-Regular.ttf");
+}
+@font-face { 
+    font-family: "AstroSpace";
+    src: url("../fonts/AstroSpace-eZ2Bg.ttf");
+}
+@font-face { 
+    font-family: "Orbitron";
+    src: url("../fonts/Orbitron-VariableFont_wght.ttf");
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    color: white;
+}
+h1, .navigation {
+    font-family: 'AstroSpace', sans-serif;
+}
+h2 {
+    font-family: 'Orbitron', sans-serif;
+    margin-bottom: 10px;
+}
+h3, h4, p {
+    font-family: 'Armata', sans-serif;
+    
+}
+footer a {
+    color: white;
+    text-decoration: none;
+}
