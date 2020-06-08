@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AOS Experimentation Site</title>
+    <!-- Links -->
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/aos.js"></script>
+</head>
+<body>
+    <header>
+        <a href="exp_index.html"><img class="logo" src="images/flogo.png" alt="fancy logo"></a>
+        <div class="menu-container">
+            <div class="menu-burger-box" id="menu-burger-box" onclick="toggleMenu()">
+                <div class="menu-burger"></div>
+            </div>
+            <ul class="navigation" id="navigation">
+                <li><a href="exp_index.html">Home</a></li>
+                <li><a href="#" class="selected">Why AOS</a></li>
+                <li><a href="inspiration.html">Inspiration</a></li>
+                <li><a target="_blank" href="https://github.com/michalsnik/aos">AOS Library</a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <div class="content">
+        <div data-aos="fade-left" data-aos-delay="500" data-aos-anchor="#example-anchor" data-aos-duration="750">
+            <h1>Why I chose</h1>
+        </div>
+        <div data-aos="fade-right" data-aos-delay="750" data-aos-anchor="#example-anchor" data-aos-duration="1000">
+            <h1>The AOS Library</h1>
+        </div>
+        <div class="article clear">
+            <div class="description">
+                <div data-aos="fade-down" data-aos-delay="1500" data-aos-duration="500">
+                    <h2>It looks cool</h2>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="1750">
+                    <p>Come on, if you're going to make a website, you might as well make it look cool. AOS has some really simple effects that add a nice polish to a site, which I though would be fun to experiment with.</p>
+                </div>
+            </div>
+        </div>
+        <div data-aos="flip-left" data-aos-anchor-placement="center-bottom" data-aos-duration="750">
+            <div class="article clear">
+                <div class="description">
+                    <h2>Highly Recommended</h2>
+                    <p>There's plenty of people out there using the AOS Library, and I've seen it at the top of many lists for animated scrolling. With all the different options to customize the animations you can create pages with different feelings just based on the settings you choose.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="images">
+            <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-easing="ease-in-out-back">
+                <img src="images/img1.png" alt="image face smile 1">
+            </div>
+            <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-easing="ease-in-out-back" data-aos-delay="100">
+                <img src="images/img2.png" alt="image face smile 2">
+            </div>
+            <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-easing="ease-in-out-back" data-aos-delay="200">
+                <img src="images/img3.png" alt="image face smile 3">
+            </div>
+            <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-easing="ease-in-out-back" data-aos-delay="300">
+                <img src="images/img4.png" alt="image face smile 4">
+            </div>
+        </div>
+        <div data-aos="flip-left" data-aos-anchor-placement="center-bottom" data-aos-duration="750">
+            <div class="article clear">
+                <div class="description">
+                    <h2>Just look at that!</h2>
+                    <p>Four animated elements right next to each other, with a slight delay. It took less than a minute to have all those animations set up. In the same amount of time, I could make them each have a unique animation like below!</p>
+                </div>
+            </div>
+        </div>
+        <div class="images">
+            <div data-aos="flip-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="500">
+                <img src="images/img4.png" alt="image face smile 1">
+            </div>
+            <div data-aos="zoom-out" data-aos-anchor-placement="bottom-bottom" data-aos-delay="200" data-aos-duration="500">
+                <img src="images/img1.png" alt="image face smile 2">
+            </div>
+            <div data-aos="flip-right" data-aos-anchor-placement="bottom-bottom" data-aos-delay="400" data-aos-duration="500">
+                <img src="images/img2.png" alt="image face smile 3">
+            </div>
+            <div data-aos="fade-up-left" data-aos-anchor-placement="bottom-bottom" data-aos-delay="300" data-aos-duration="600">
+                <img src="images/img3.png" alt="image face smile 4">
+            </div>
+        </div>
+        <div class="article clear">
+            <div data-aos="flip-right" data-aos-easing="ease-in-out-back" data-aos-duration="1000">
+                <div class="description">
+                    <h2>It's easy to implement</h2>
+                    <div data-aos="zoom-out" data-aos-easing="ease-in-out-back" data-aos-duration="1000">
+                        <p>Seriously all I have to do is add a div tag? After a little bit of installation to get the package itself installed it's quick and easy to animate the different elements. There's good documentation online about how different tags affect the animation, so it makes it easy to figure out what to do to get a desired look.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <a target="_blank" href="https://nateptay.github.io/designs.html">© Copyright 2020 Nathan Taylor</a>
+    </footer>
+    
+    <script>
+    function toggleMenu() {
+        var burgbutton = document.getElementById("menu-burger-box");
+        var nav = document.getElementById("navigation");
+        if (nav.style.display==="block") {
+            nav.style.display = "none";
+            burgbutton.classList.remove('open');
+        }
+        else {
+            nav.style.display = "block";
+            burgbutton.classList.add('open');
+        }
+    }
+    </script>
+    <script>AOS.init();</script>
+</body>
+</html>

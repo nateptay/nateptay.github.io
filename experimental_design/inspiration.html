@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AOS Experimentation Site</title>
+    <!-- Links -->
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/aos.js"></script>
+</head>
+<body>
+    <header>
+        <a href="exp_index.html"><img class="logo" src="images/flogo.png" alt="fancy logo"></a>
+        <div class="menu-container">
+            <div class="menu-burger-box" id="menu-burger-box" onclick="toggleMenu()">
+                <div class="menu-burger"></div>
+            </div>
+            <ul class="navigation" id="navigation">
+                <li><a href="exp_index.html">Home</a></li>
+                <li><a href="why_aos.html">Why AOS</a></li>
+                <li><a href="#inspiration" class="selected">Inspiration</a></li>
+                <!-- https://www.mcube.fr/projets/
+                     https://www.questionpro.com/ -->
+                <li><a target="_blank" href="https://github.com/michalsnik/aos">AOS Library</a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <div class="content">
+        <div data-aos="fade-left" data-aos-delay="500" data-aos-anchor="#example-anchor" data-aos-duration="750">
+            <h1>What Inspired Me</h1>
+        </div>
+        <div data-aos="fade-right" data-aos-delay="750" data-aos-anchor="#example-anchor" data-aos-duration="1000">
+            <h1>To try this Library</h1>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="1500">
+        <a target="_blank" href="http://michalsnik.github.io/aos/"><div class="article">
+            <img src="images/GitHub_Logo_White.png" alt="github mark logo">
+            <div data-aos="zoom-right" data-aos-delay="1850">
+                <div class="description">
+                    <h2>The AOS Project on Github</h2>
+                    <p>When I started scrolling through Michał Sajnóg's github.io page for AOS, I recognized the idea from some high end sites. Apple uses scrolling animations for most of their site, and it has a really cool effect. Seeing the Demo page with code examples made that idea seem a whole lot more obtainable.</p>
+                    <br>
+                    <p>http://michalsnik.github.io/aos/</p>
+                </div>
+            </div>
+        </div></a>
+        </div>
+        <div data-aos="flip-left" data-aos-anchor-placement="center-bottom" data-aos-duration="750">
+        <a target="_blank" href="https://www.questionpro.com/"><div class="article">
+           <div class="article">
+                <div class="description">
+                    <h2>QuestionPro.com</h2>
+                    <p>This was one site I found that uses AOS well in its code. I think it had good use of white space, and the timing of the elements worked out nice so you don't have to wait too long to see information on the page. I've noticed some sites where the animated scrolling feels like it wastes the user's time, but I think this site had good pacing.</p>
+                    <br>
+                    <p>https://www.questionpro.com/</p>
+                </div>
+            </div>
+        </div></a>
+        </div>
+        <div data-aos="zoom-out" data-aos-anchor-placement="center-bottom" data-aos-easing="ease-in-out-back" data-aos-duration="750">
+        <a target="_blank" href="https://www.mcube.fr/projets/"><div class="article">
+           <div class="article">
+                <div class="description">
+                    <h2>mcube.fr/projects</h2>
+                    <p>This site had some cool animations, particles, and layouts. I liked the project gallery animations because they keep drawing you further down the page. There's a feather running circles around the page, and animated images and text that make users want to scroll.</p>
+                    <br>
+                    <p>https://www.mcube.fr/projets/</p>
+                </div>
+            </div>
+        </div></a>
+        </div>
+
+        <div class="images">
+            <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-easing="ease-in-out-back">
+                <img src="images/img1.png" alt="image face smile 1">
+            </div>
+            <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-easing="ease-in-out-back" data-aos-delay="100">
+                <img src="images/img2.png" alt="image face smile 2">
+            </div>
+            <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-easing="ease-in-out-back" data-aos-delay="200">
+                <img src="images/img3.png" alt="image face smile 3">
+            </div>
+            <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-easing="ease-in-out-back" data-aos-delay="300">
+                <img src="images/img4.png" alt="image face smile 4">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <a target="_blank" href="https://nateptay.github.io/designs.html">© Copyright 2020 Nathan Taylor</a>
+    </footer>
+    
+    <script>
+    function toggleMenu() {
+        var burgbutton = document.getElementById("menu-burger-box");
+        var nav = document.getElementById("navigation");
+        if (nav.style.display==="block") {
+            nav.style.display = "none";
+            burgbutton.classList.remove('open');
+        }
+        else {
+            nav.style.display = "block";
+            burgbutton.classList.add('open');
+        }
+    }
+    </script>
+    <script>AOS.init();</script>
+</body>
+</html>

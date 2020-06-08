@@ -12,6 +12,9 @@
     display: inline-block;
     font-size: 1.5em;
 }
+.article.clear {
+    background-color: rgba(0, 0, 0, 0);
+}
 .article img {
     float: left;
     width: auto;
@@ -21,6 +24,7 @@
 .article .description {
     text-align: center;
     padding-top: 100px;
+    padding-bottom: 75px;
 }
 
 .images {
