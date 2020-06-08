@@ -7,7 +7,10 @@
 body {
     background-color: #050545;
 }
-
+.content h1 {
+    text-align: center;
+    font-size: 2.5em;
+}
 footer {
     background-color: #000;
     width: 100%;
