@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AOS Experimentation Site</title>
+    <!-- Links -->
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/aos.js"></script>
+</head>
+<body>
+    <header>
+        <a href="#"><img class="logo" src="images/flogo.png" alt="fancy logo"></a>
+        <div class="menu-container">
+            <div class="menu-burger-box" id="menu-burger-box" onclick="toggleMenu()">
+                <div class="menu-burger"></div>
+            </div>
+            <ul class="navigation" id="navigation">
+                <li><a href="#" class="selected">Home</a></li>
+                <li><a href="why_aos.html">Why AOS</a></li>
+                <li><a href="inspiration.html">Inspiration</a></li>
+                <li><a target="_blank" href="https://github.com/michalsnik/aos">AOS Library</a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <div class="content">
+        <div data-aos="fade-left" data-aos-delay="500" data-aos-anchor="#example-anchor" data-aos-duration="750">
+            <h1>Welcome</h1>
+        </div>
+        <div data-aos="fade-right" data-aos-delay="750" data-aos-anchor="#example-anchor" data-aos-duration="1000">
+            <h1>to my Experimental Design</h1>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="1500" data-aos-duration="500">
+        <a href="why_aos.html"><div class="article">
+            <img src="images/earth-from-moon.jpg" alt="First article image">
+            <div data-aos="fade-down" data-aos-delay="1750">
+                <div class="description">
+                <h2>Why AOS?</h2>
+                <p>There are a lot of libraries out there that we can use as web designers. Why did I choose to use Animate On Scroll, or AOS? It really came down to a few different reasons.</p>
+                <br>
+                <p>Read More ></p>
+                </div>
+            </div>
+        </div></a>
+        </div>
+        
+        <div data-aos="fade-up" data-aos-duration="500">
+        <a href="inspiration.html"><div class="article">
+            <img src="images/star-jar.jpg" alt="Second article image">
+            <div data-aos="flip-right" data-aos-delay="200">
+                <div class="description">
+                    <h2>The Inspiration to use AOS</h2>
+                    <p>If I was just looking for any old JavaScript library, I would have chosen any old JavaScript library. I wanted something sleek, so when I saw how these sites used the AOS Library to add a professional touch, I was inspired to give it a shot.</p>
+                <br>
+                <p>Read More ></p>
+                </div>
+            </div>
+        </div></a>
+        </div>
+        <div class="images">
+            <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                <img src="images/img1.png" alt="image face smile 1">
+            </div>
+            <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="100">
+                <img src="images/img2.png" alt="image face smile 2">
+            </div>
+            <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="200">
+                <img src="images/img3.png" alt="image face smile 3">
+            </div>
+            <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="300">
+                <img src="images/img4.png" alt="image face smile 4">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <a target="_blank" href="https://nateptay.github.io/designs.html">© Copyright 2020 Nathan Taylor</a>
+    </footer>
+    
+    <script>
+    function toggleMenu() {
+        var burgbutton = document.getElementById("menu-burger-box");
+        var nav = document.getElementById("navigation");
+        if (nav.style.display==="block") {
+            nav.style.display = "none";
+            burgbutton.classList.remove('open');
+        }
+        else {
+            nav.style.display = "block";
+            burgbutton.classList.add('open');
+        }
+    }
+    </script>
+    <script>AOS.init();</script>
+</body>
+</html>

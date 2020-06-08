@@ -1,0 +1,197 @@
+﻿<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Nathan Taylor Portfolio</title>
+    <meta name="description" content="Web Portfolio for Nathan Taylor"/>
+
+    <!-- Stylesheets, inlcuding custom fonts, go here -->
+    <link rel="stylesheet" href="../style.css" type="text/css" media="all">
+</head>
+
+<body>
+    <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+    <header class="masthead">
+        <div class="site-branding">
+            <h1 class="site-title"><a href="../index.html">Nathan Taylor Portfolio</a></h1>
+        </div><!-- .site-title -->
+        <nav id="site-navigation" class="main-navigation" role="navigation">
+            <!-- Mobile menu toggle button -->
+            <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">Menu</button>
+            <!-- Main Menu -->
+            <div class="menu-main-menu-container">
+                <ul id="primary-menu" class="nav-menu">
+                    <li class="menu-item current-menu-item"><a href="../index.html">Home</a></li>
+                    <li class="menu-item menu-item-has-children">
+                        <a href="../designs.html">Designs</a>
+                        <ul class="sub-menu">
+                            <li class="menu-item"><a href="../designs.html">Gallery Design</a></li>
+                            <li class="menu-item"><a href="../designs.html#hex2">Kid Design</a></li>
+                            <li class="menu-item"><a href="../designs.html#hex3">Experimental Design</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a href="../coding.html">Coding</a></li>
+                    <li class="menu-item"><a href="../about.html">About</a></li>
+                    <li class="menu-item"><a href="../contact.html">Contact</a></li>
+                 </ul></div>
+        </nav>
+    </header><!-- .masthead -->
+
+    <div class="content">
+        <h1>Experimental Design</h1>
+        <a href="../experimental_design/exp_index.html"><img title="View the Design" src="../experimental_design/images/flogo.png"></a>
+        <main class="main-area">
+            <h2><b>Project Title:</b> Experimental Design</h2>
+            <h2><b>Start Date:</b> 6/5/2020</h2>
+            <h2><b>End Date:</b> 6/8/2020</h2>
+            <h2><b>My Role:</b> Entire Project</h2>
+            <h2><b>Program Type:</b> Web Design</h2>
+            <h2><b>Languages Used:</b> HTML, CSS, JavaScript</h2>
+            <h2><b>Description:</b> This was a school project where we were given two weeks to experiment with a JavaScript library, and use it in our site design. I found the Animate On Scroll library and loved the functionality that it came with, so I started looking into installation and uses for it. I liked the idea of 0 gravity for the design because the elements can appear to float around into place. I looked for some outer-space inspiration for the design itself, then sketched out some design layouts and got to coding.</h2>
+            <h2><b>Highlight:</b> My favorite part of this design was how easy it was to animate elements once I had the library installed. I also enjoyed animating the Menu button to switch from three bars to an X and back.</h2>
+            
+            <p><b>Purpose: </b> The goal of this site is to show off what I've learned while working with the Animate On Scroll Library</p>
+            <p><b>Target Audience: </b>Programmers and People looking for an interesting feature for their website.</p>
+            <a href="experimental/ExperimentalDesignDocuments.zip" download>Download the Style Guide Documents</a>
+            
+            <a href="../experimental_design/exp_index.html"><h2>View the Design</h2></a>
+            <br>
+            <h2><b>Design Sketches</b></h2>
+            <style>
+            /*****************
+                 Slider
+            *****************/
+            /* Positioning for the container */
+            .container {
+                background-color: #050545;
+                margin: 3em;
+                position: relative;
+                overflow: hidden;
+                box-shadow: inset 0 0 10px #000000;
+                color: white;
+            }
+            .container img {
+                vertical-align: middle;
+            }
+            /* Left & right buttons */
+            .container .left,
+            .container .right {
+                font-family: 'Alloy Ink', monospace;
+                cursor: pointer;
+                position: absolute;
+                width: auto;
+                height: 100%;
+                text-align: center;
+                padding: 16px;
+                color: hsla(0, 0%, 95%, 1);
+                text-shadow: 2px 2px black;
+                font-weight: bold;
+                font-size: 5em;
+                border-radius: 0 3px 3px 0;
+            }
+            /* Put the right button on the right */
+            .right {
+                right: 0;
+                border-radius: 3px 0 0 3px;
+            }
+            /* On hover, slight background with the orange font */
+            .left:hover,
+            .right:hover {
+                color: hsla(0, 0%, 100%, 1);
+                background-color: rgba(0, 0, 0, 0.25);
+            }
+            </style>
+            <div class="container" style="display: inline-block">
+                <a class="left" onclick="nextSlides(-1)" alt="Last"><p>&lt</p></a>
+                <a class="right" onclick="nextSlides(1)" alt="Next"><p>&gt</p></a>
+                <div class="mySlides">
+                    <p>Desktop Sketch of Home Page</p>
+                    <img src="experimental/deskdrawing.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <p>Desktop Layout for Home Page</p>
+                    <img src="experimental/desklayout.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <p>Tablet Sketch of Home Page</p>
+                    <img src="experimental/tabdrawing.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <p>Tablet Layout for Home Page</p>
+                    <img src="experimental/tablayout.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <p>Mobile Sketch of Home Page</p>
+                    <img src="experimental/mobiledrawing.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <p>Mobile Layout for Home Page</p>
+                    <img src="experimental/mobilelayout.jpg" style="width:100%">
+                </div>
+            </div>
+
+        </main><!-- .main-area -->
+    </div><!-- .content -->
+
+    <footer class="footer-area">
+        © Copyright 2020 Nathan Taylor
+    </footer>
+
+    <!-- Scripts for accessible mobile-first navigation -->
+    <script   src="https://code.jquery.com/jquery-3.4.1.min.js"   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="   crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../js/navigation.js"></script>
+    
+    <script src="../js/gsap.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        // wait until DOM is ready
+                var tl1 = new TimelineMax();
+                tl1.from('#hex1.hexagon', 1, {opacity: 0, y: 100})
+                .from('#hex2.hexagon', 1, {opacity: 0, y: 100}, '-=0.75')
+                .from('#hex3.hexagon', 1, {opacity: 0, y: 100}, '-=0.75');
+    </script>
+    
+    <!-- Slider script -->
+    <script>
+        var slide = 1;
+        showSlides(slide);
+
+        function nextSlides(n) {
+            showSlides(slide += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slide = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) {
+                slide = 1
+            }
+            if (n < 1) {
+                slide = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slide-1].style.display = "block";
+            dots[slide-1].className += " active";
+            captionText.innerHTML = dots[slide-1].alt;
+        }
+    </script>
+
+</body>
+
+</html>
