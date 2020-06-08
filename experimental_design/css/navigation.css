@@ -109,7 +109,6 @@ header {
     transform: rotate(-45deg) translate(35px, 35px);
 }
 
-
 /* Responsive */
 @media screen and (max-width: 780px) {
     header {
@@ -118,6 +117,4 @@ header {
     .logo {
         left: 0px;
     }
-}
-@media screen and (max-width: 1000px) {
 }
