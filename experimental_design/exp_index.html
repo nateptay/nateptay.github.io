@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang=en>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>AOS Experimentation Site</title>
     <!-- Links -->
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/aos.js"></script>
 </head>
 <body>
     <header>
@@ -15,36 +16,53 @@
                 <div class="menu-burger"></div>
             </div>
             <ul class="navigation" id="navigation">
-                <a href="#home" class="selected"><li>Home</li></a>
-                <a href="#about"><li>Why AOS</li></a>
-                <a href="#inspiration"><li>Inspiration</li></a>
+                <li><a href="#home" class="selected">Home</a></li>
+                <li><a href="#about">Why AOS</a></li>
+                <li><a href="#inspiration">Inspiration</a></li>
                 <!-- https://www.mcube.fr/projets/
                      https://www.questionpro.com/ -->
-                <a href="#library"><li>AOS Library</li></a>
+                <li><a href="#library">AOS Library</a></li>
             </ul>
         </div>
     </header>
-        
+    
     <div class="content">
+        <div data-aos="fade-up" data-aos-duration="500">
         <div class="article">
             <img src="images/art1.png" alt="First article image">
-            <div class="description">
+            <div data-aos="fade-down" data-aos-delay="200">
+                <div class="description">
                 <h2>Title For Article 1</h2>
                 <p>Description for article 1 that talks about what the article includes. It's really a great describer and it has some information about the first article. It might be the opening paragraph of the article, depending on whether or not that article had a description provided for it.</p>
+                </div>
             </div>
         </div>
+        </div>
+        
+        <div data-aos="fade-up" data-aos-duration="500">
         <div class="article">
             <img src="images/art2.png" alt="Second article image">
-            <div class="description">
-                <h2>Title For Article 2</h2>
-                <p>Description for article 2 that talks about what sorts of things the article includes. It really is a magnificent describer with some information about the first article. It might just be the opening paragraph of the article, depending on whether or not that article had a description provided for it.</p>
+            <div data-aos="flip-right" data-aos-delay="200">
+                <div class="description">
+                    <h2>Title For Article 2</h2>
+                    <p>Description for article 2 that talks about what sorts of things the article includes. It really is a magnificent describer with some information about the first article. It might just be the opening paragraph of the article, depending on whether or not that article had a description provided for it.</p>
+                </div>
             </div>
         </div>
+        </div>
         <div class="images">
-            <img src="images/img1.png" alt="image face smile 1">
-            <img src="images/img2.png" alt="image face smile 2">
-            <img src="images/img3.png" alt="image face smile 3">
-            <img src="images/img4.png" alt="image face smile 4">
+            <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                <img src="images/img1.png" alt="image face smile 1">
+            </div>
+            <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="100">
+                <img src="images/img2.png" alt="image face smile 2">
+            </div>
+            <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="200">
+                <img src="images/img3.png" alt="image face smile 3">
+            </div>
+            <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="300">
+                <img src="images/img4.png" alt="image face smile 4">
+            </div>
         </div>
     </div>
     
@@ -66,5 +84,6 @@
         }
     }
     </script>
+    <script>AOS.init();</script>
 </body>
 </html>

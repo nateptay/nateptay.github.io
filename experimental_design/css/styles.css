@@ -1,3 +1,4 @@
+@import "aos.css";
 @import "global.css";
 @import "navigation.css";
 @import "typography.css";
@@ -28,5 +29,5 @@
     margin: 2.5%;
 }
 .images img {
-    width: 20%;
+    width: 90%;
 }
