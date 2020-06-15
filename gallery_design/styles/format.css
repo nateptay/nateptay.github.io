@@ -1,0 +1,160 @@
+.center
+{
+	margin: auto;
+	filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.5));box-shadow:2px 2px 4px 1px rgba(0, 0, 0, 0.25);
+	width: 45%;
+}
+body {
+	margin: 0;
+}
+
+.logo{
+	display: inline-block;
+}.logo img{
+	height:150px;
+}
+.page{
+	display: inline-block;
+	vertical-align: top;
+	padding: 0px 0px 0px 10px;
+	color: #55B9F5;
+	font-size: 1.8em;
+	text-align: left;
+	text-transform:uppercase;
+}.page h1::first-letter{
+	font-size:1.2em;
+}
+.button{
+	background:#55B9F5;
+	color:#fff;
+	margin:5px;
+	padding: 10px 25px 10px 25px;
+	box-shadow:1px 1px 2px 0px rgba(0, 0, 0, .25);	
+	text-decoration: none;
+}.button:hover{
+	background:#60BBFF;
+	box-shadow:2px 2px 3px 0px rgba(0, 0, 0, .25);
+	text-decoration: underline;
+}
+
+.nav
+{
+	margin: auto;
+	text-align: center;
+	background: #FFF;
+	box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.125);
+}
+section {
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background: #FAFAFA;
+	width: 80%;
+	z-index: 0;
+	display: block;
+}
+
+.map .selected{
+	display: inline-block;
+	background: #EEE;
+	padding: 10px;
+	margin: 5px;
+	vertical-align: top;
+	border-radius: 5px 0px 0px 5px;
+	width: 30%;
+
+}
+.map .selected a{
+	font-family: serif;
+	padding: 0px;
+	text-align: left;
+}.map .selected p{
+	padding: 0px;
+	text-align: left;
+}.map .display{
+	display: inline-block;
+	margin: 5px;
+	max-width: 60%;
+}.map .display > iframe{
+	width: 800px; 
+	height: 600px;
+}
+.map .display iframe{
+	max-width: 100%;
+	max-height: 100%;
+}
+.specials img{
+	width:48%;
+}
+.giftcard, .specials{
+	display: block;
+	margin: 2%;
+}
+.giftcard img{
+	margin: 2%;
+	width:100%;
+	display: inline-block;
+}
+.giftcard .option{
+	width: 24%;
+	display: inline-block;
+}.giftcard .option p:hover{
+	background: #FEFEFE;
+}
+
+.menu-item {
+	width:47%;
+	margin: 1%;
+	display: inline-block;
+	vertical-align: top;
+}.menu-item img{
+	width:100%;
+}.menu-item li {
+	text-align:left;
+	font-family: sans-serif;
+}.menu-item h4 {
+	padding: 5px;
+	font-size: 1.1em;
+	text-decoration: underline;
+}
+
+/** Footer **/
+footer{
+	background: #EBDCC8;
+	padding: 25px;
+}
+.footerblock {
+	width:32%;
+    border-right: 1px solid black;
+    display: inline-block;
+	vertical-align: top;
+}.footerblock a{
+	text-decoration: none;
+}
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 10px;
+  margin-bottom: 0px;
+  color: white;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+}
+
+.fa-instagram {
+  background: #125688;
+}
