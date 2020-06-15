@@ -1,0 +1,22 @@
+a{
+	color: #55B9F5;
+}a.active{
+	color: #FF87CD;
+}
+h3{
+	color: #AFEB00;
+	font-weight: bold;
+	text-align: center;
+	padding: 5px;
+}
+section a, p{
+	font-family: sans-serif;
+	padding: 10px;
+	text-align: center;
+}
+footer{
+	text-align: center;
+}
+.card_banner_top{
+	float:left;
+}

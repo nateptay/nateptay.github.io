@@ -1,0 +1,142 @@
+:root {
+  --filter-saturation: 1;
+  --filter-brightness: 0.5;
+}
+.mobile {
+    visibility: hidden;
+    width: 0px;
+}
+.gallery {
+    margin: 3em;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 15vw);
+    grid-gap: 15px;
+}
+.gal-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.gal-box h3 {
+    font-size: 1.4em;
+}
+.gal-box h4 {
+    font-size: 1.1em;
+}
+.gal-box-1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.gal-box-2 {
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.gal-box-5 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.gal-box-7 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+.gal-box-9 {
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+/* Flippable images */
+.gal-box {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 0.7s;
+    text-align: center;
+    overflow: hidden;
+}
+.gal-text {
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%)/* rotatey(180deg)*/;
+    
+}
+.gal-text a {
+    background-color: rgba(255, 255, 255, 0.75);
+    color: black;
+    bottom: 1em;
+    padding: 10px 1em;
+}
+.gal-text:hover {
+    color: black;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid white;
+    transform-style: preserve-3d;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+    opacity: 100%;
+    animation-name: hoverHL; /*Hover Highlight*/
+    animation-duration: 200ms;
+}
+.gal-text:hover h1, .gal-text:hover h3 {
+    margin: 0;
+    padding: 1.5em;
+    color: #000;
+    background-color: rgba(95, 195, 255, 0.7);
+    opacity: 1;
+    animation-name: headerHover; /*Hover Highlight*/
+    animation-duration: 500ms;
+}
+.gal-text:hover h2, .gal-text:hover h4 {
+    padding: 1em;
+    color: #000;
+    background-color: rgba(240, 200, 255, 0.7);
+    opacity: 1;
+    animation-name: headerHover; /*Hover Highlight*/
+    animation-duration: 500ms;
+}
+@keyframes hoverHL {
+    0% {
+        opacity: 0;
+        border: 0px solid white;
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 1);
+    }
+    100% {
+        opacity: 100%;
+        border: 2px solid white;
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+    }
+}
+@keyframes headerHover {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 905px) {
+    .mobile {
+        visibility: visible;
+        width: inherit;
+        vertical-align: top;
+    }
+    .notMobile {
+        visibility: hidden;
+        width: 0px;
+    }
+}
