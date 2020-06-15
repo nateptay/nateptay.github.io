@@ -8,8 +8,6 @@ select,
 textarea {
 	color: black;
 	font-family: serif;
-	font-size: 18px;
-	line-height: 1.5;
 }
 
 body,
@@ -120,25 +118,4 @@ small {
 
 big {
 	font-size: 125%;
-}
-
-
-h1 {
-	font-size: 2em;
-	line-height: 1.25;
-}
-
-h2 {
-	font-size: 1.6em;
-	line-height: 1.2;
-}
-
-h3 {
-	font-size: 1.4em;
-	line-height: 1.15;
-}
-
-h4 {
-	font-size: 1.2em;
-	line-height: 1;
 }
