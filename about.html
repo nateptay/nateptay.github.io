@@ -11,6 +11,57 @@
 
     <!-- Stylesheets, inlcuding custom fonts, go here -->
     <link rel="stylesheet" href="style.css" type="text/css" media="all">
+    <link rel="stylesheet" type="text/css" href="css/projdesc.css">
+    <style>  
+        .banner {
+            position: relative;
+            width: 50%;
+            margin-left: 25%;
+        }
+        .banner .profile {
+            background-color: black;
+            color: white;
+            border: solid white;
+            box-shadow: 0px 0px 5px 2px black;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .banner h2 {
+            font-size: 6em;
+            padding-left: 25px;
+            margin: 5px;
+            margin-bottom: 0px;
+            padding: 0px;
+        }
+        .banner h3 {
+            margin-top: 0px;
+            padding-top: 0px;
+            padding: 0px;
+        }
+        .banner h3 a {
+            text-decoration: none;
+            color: black;
+        }
+        .socials a {
+            font-size: 2em;
+            text-decoration: none;
+            color: black;
+        }
+        .socials a:hover, .banner h3 a:hover {
+            color: darkgray;
+        }
+        .education {
+            background-color: whitesmoke;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 15px;
+            width: 50%;
+            text-align: left;
+        }
+    </style>
 </head>
 
 <body>
@@ -41,31 +92,44 @@
                 </ul></div>
         </nav>
     </header><!-- .masthead -->
-
     <div class="content">
         <h1>About</h1>
         <main class="main-area">
-            <h2>I'm Nathan</h2>
+            <div class="banner">
+                <div class="profile"><img src="images/profilepic.png" alt="profile image"></div>
+                <div>
+                    <h2>I'm Nathan</h2>
+                    <h3><a href="coding.html">Programmer</a> | <a href="designs.html">Designer</a> | <a href="#education">Learner</a></h3>
+                </div>
+            </div>
+            <div class="socials">
+                <a target="_blank" href="https://www.linkedin.com/in/nathanptay/">
+                    <i style="margin-right: 10px;" class="fab fa-linkedin fa-fw"> </i>
+                </a>
+                <a href="https://github.com/nateptay">
+                    <i class="fab fa-github fa-fw"> </i>
+                </a>
+                <a href="#instagram">
+                    <i style="margin-left: 10px;" class="fab fa-instagram fa-fw"> </i>
+                </a>
+            </div>
             <p>I'll write an entire bio about myself soon. I write code, I design graphics. I hope you enjoy looking around at my work!</p>
-            <h2>Education</h2>
-            <h3>Cascadia Community College | 2018-Present</h3>
-            <h3>DigiPen | 2016-2018</h3>
-            <ul>
-                <li>Video Game Programming</li>
-                <li>Art and Animation</li>
-            </ul>
-            <div class="contact">
-                <h2>Contact Me Here!</h2>
-                <span>Email </span><input /><br />
-                <span>Reason </span>
-                <select>
-                    <option>Coding Inquiry</option>
-                    <option>Design Inquiry</option>
-                    <option>Other</option>
-                </select><br />
-                <span>Message Here </span><input /> <br />
-                <button>Send</button>
-            </div><!-- contact form-->
+            <a href="contact.html" class="action_button"><i class="far fa-envelope fa-fw"> </i> Get in touch</a>
+            <br><br><br>
+            <div class="education"id="education">
+                <h2>Education</h2>
+                <h3>Cascadia Community College | 2018-Present</h3>
+                <ul style="list-style: none;">
+                    <li>Web Design</li>
+                    <li>Intermediate Programming</li>
+                    <li>Server Administration</li>
+                </ul>
+                <h3>DigiPen | 2016-2018</h3>
+                <ul style="list-style: none;">
+                    <li>Video Game Programming</li>
+                    <li>Art and Animation</li>
+                </ul>
+            </div>
         </main><!-- .main-area -->
     </div><!-- .content -->
 
