@@ -11,6 +11,43 @@
 
     <!-- Stylesheets, inlcuding custom fonts, go here -->
     <link rel="stylesheet" href="style.css" type="text/css" media="all">
+    <link rel="stylesheet" type="text/css" href="css/projdesc.css">
+    <style>
+        .wufoo_contact h2 {
+            padding-top: 15px;
+            text-align: center;
+            margin-left: auto;
+        }
+        .wufoo_contact {
+            background-color: whitesmoke;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: left;
+        }
+        .wufoo_contact li {
+            list-style: none;
+            font-size: 1.2em;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+        .wufoo_contact .hide {
+            visibility: hidden;
+        }
+        .wufoo_contact .group input, .group select, .group textarea {
+            width: 100%;
+        }
+        .wufoo_contact .group li {
+            width: 60%;
+            justify-content: space-between;
+            padding-bottom: 10px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        button {
+            width: 10%;
+        }
+    </style>
 </head>
 
 <body>
@@ -38,24 +75,68 @@
                     <li class="menu-item"><a href="coding.html">Coding</a></li>
                     <li class="menu-item"><a href="about.html">About</a></li>
                     <li class="menu-item current-menu-item"><a href="contact.html">Contact</a></li>
-                </ul></div>
+                </ul>
+            </div>
         </nav>
     </header><!-- .masthead -->
 
+    <h1>Contact</h1>
+    <main class="main-area">
     <div class="content">
-        <h1>Contact</h1>
-        <main class="main-area">
-            <div class="contact">
-                <span>Email </span><input /><br />
-                <span>Reason </span>
-                <select>
-                    <option>Coding Inquiry</option>
-                    <option>Design Inquiry</option>
-                    <option>Other</option>
-                </select><br />
-                <span>Message Here </span><input /> <br />
-                <button>Send</button>
-            </div><!-- contact form-->
+            <div class="wufoo_contact"><!--Wufoo form-->
+                <form id="form1" name="form1" class="wufoo topLabel page" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate action="https://nateptay.wufoo.com/forms/z106yr8l0bha1ww/#public">
+
+                <header id="fheader" class="info">
+                    <h2 class="0">Contact Me</h2>
+                </header>
+                <ul>
+                <div class="group">
+                <li id="foli10" class="notranslate">
+                    <label class="desc" id="title10">Name</label>
+                    <span>
+                        <input id="Field10" name="Field10" type="text" class="field text fn" value="" size="8" tabindex="0" placeholder="Person McPerson"/>
+                    </span>
+                </li>
+                <li id="foli4" class="" >
+                    <label class="desc notranslate" id="title4" for="Field4">Contact Reason</label>
+                    <span>
+                        <select id="Field4" name="Field4" class="field select medium" tabindex="0" data-wufoo-field="dropdown" >
+                            <option value="Programming Inquiry" selected="selected"><span class="notranslate">Programming Inquiry</span></option>
+                            <option value="Design Inquiry"><span class="notranslate">Design Inquiry</span></option>
+                            <option value="Other"><span class="notranslate">Other</span></option>
+                        </select>
+                    </span>
+                </li>
+                <li id="foli3" class="notranslate">
+                    <label class="desc" id="title3" for="Field3">Email</label>
+                    <span>
+                        <input id="Field3" name="Field3" type="email" spellcheck="false" class="field text medium" value="" maxlength="255" tabindex="0"       placeholder="contact@business.com" />
+                    </span>
+                </li>
+                <li id="foli5" class="notranslate">
+                    <label class="desc" id="title5" for="Field5">Message</label>
+                    <div>
+                        <textarea id="Field5" name="Field5" class="field textarea medium" spellcheck="true"   rows="10" cols="50" placeholder="Input message here"></textarea>
+                    </div>
+                </li> 
+                <li class="buttons">
+                    <button target="_blank" id="saveForm" name="saveForm" class="btTxt submit" type="submit"><i class="fas fa-paper-plane fa-fw"></i> Send</button>
+                    <!--<div>
+                        <input target="_blank" id="saveForm" name="saveForm" class="btTxt submit" type="submit" value="Send"/>
+                    </div>-->
+                </li>
+                </div><!--end group-->
+                </ul>
+                <li class="hide">
+                <label for="comment">Do Not Fill This Out</label>
+                <textarea name="comment" id="comment" rows="1" cols="1"></textarea>
+                <input type="hidden" id="idstamp" name="idstamp" value="uJVMEq84UGgrvY/vAyRpg/44rFTbFvKttYoSCADhWss=" />
+                <input type="hidden" id="encryptedPassword" name="encryptedPassword" value="" />
+                </li>
+
+                </form>
+            </div>
+
         </main><!-- .main-area -->
     </div><!-- .content -->
 
