@@ -15,8 +15,7 @@
     <style>  
         .banner {
             position: relative;
-            width: 50%;
-            margin-left: 25%;
+            width: 100%;
         }
         .banner .profile {
             background-color: black;
@@ -30,16 +29,15 @@
             margin-right: auto;
         }
         .banner h2 {
-            font-size: 6em;
+            font-size: 4em;
             padding-left: 25px;
             margin: 5px;
             margin-bottom: 0px;
             padding: 0px;
         }
         .banner h3 {
+            font-size: 1em;
             margin-top: 0px;
-            padding-top: 0px;
-            padding: 0px;
         }
         .banner h3 a {
             text-decoration: none;
@@ -54,12 +52,25 @@
             color: darkgray;
         }
         .education {
-            background-color: whitesmoke;
+            background-color: rgba(0, 0, 0, 0.1);
             margin-left: auto;
             margin-right: auto;
             padding: 15px;
-            width: 50%;
+            width: 100%;
             text-align: left;
+        }
+        @media screen and (min-width: 1050px) {
+            .banner h2 {
+                font-size: 6em;
+            }
+            .banner h3 {
+                font-size: 1.3em;
+            }
+        }
+        @media screen and (min-width: 850px) {
+            .education {
+                width: 50%;
+            }
         }
     </style>
 </head>
@@ -106,7 +117,7 @@
                 <a target="_blank" href="https://www.linkedin.com/in/nathanptay/">
                     <i style="margin-right: 10px;" class="fab fa-linkedin fa-fw"> </i>
                 </a>
-                <a href="https://github.com/nateptay">
+                <a target="_blank" href="https://github.com/nateptay">
                     <i class="fab fa-github fa-fw"> </i>
                 </a>
                 <a href="#instagram">

@@ -4,6 +4,3 @@
 @import "typography.css";
 @import "masthead.css";
 @import "navigation.css";
-body {
-    background-color: #DDD;
-}

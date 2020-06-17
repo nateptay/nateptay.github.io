@@ -1,6 +1,7 @@
 /*
 The primary stylesheet for Oolith. This sheet pulls in all the components in order of appearance.
 */
+@import "reset.css";
 @import url('css/buttons.css');
 @import url('css/reset.css');
 @import url('css/accessibility.css');
@@ -10,7 +11,9 @@ The primary stylesheet for Oolith. This sheet pulls in all the components in ord
 @import url('css/navigation.css');
 @import url('css/images.css');
 @import url('css/projdesc.css');
-
+body {
+    background-color: #DDD;
+}
 .site-title a {
     font-size: 0.7em;
 }
@@ -41,7 +44,7 @@ The primary stylesheet for Oolith. This sheet pulls in all the components in ord
 .hexagon a {
     font-family: monospace;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1.5em;
     color: #28303C;
 }
 @media screen and (min-width: 550px) {
