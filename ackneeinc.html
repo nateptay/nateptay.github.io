@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Acknee Inc. | Nathan Taylor Portfolio</title>
+    <meta name="description" content="Web Portfolio for Nathan Taylor"/>
+    <link rel="icon" href="images/favicon.png">
+
+    <!-- Stylesheets, inlcuding custom fonts, go here -->
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Extra swiper styling -->
+    <style>
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .swiper1 .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    .swiper2 .swiper-slide {
+        background-position: center;
+        background-size: cover;
+    }
+</style>
+</head>
+
+<body>
+    <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+    <header class="masthead">
+        <div class="site-branding">
+            <h1 class="site-title"><a href="index.html">Nathan Taylor Portfolio</a></h1>
+        </div><!-- .site-title -->
+        <nav id="site-navigation" class="main-navigation" role="navigation">
+            <!-- Mobile menu toggle button -->
+            <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">Menu</button>
+            <!-- Main Menu -->
+            <div class="menu-main-menu-container">
+                <ul id="primary-menu" class="nav-menu">
+                    <li class="menu-item"><a href="index.html">Home</a></li>
+                    <li class="menu-item menu-item-has-children">
+                        <a href="designs.html">Designs</a>
+                        <ul class="sub-menu">
+                            <li class="menu-item"><a href="designs.html">Gallery Design</a></li>
+                            <li class="menu-item"><a href="designs.html#hex2">Kid Design</a></li>
+                            <li class="menu-item"><a href="designs.html#hex3">Experimental Design</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item current-menu-item menu-item-has-children">
+                        <a href="coding.html">Coding</a>
+                        <ul class="sub-menu">
+                            <li class="menu-item"><a href="coding.html">Secret of the Deep</a></li>
+                            <li class="menu-item"><a href="coding.html#hex2">Acknee Inc.</a></li>
+                            <li class="menu-item"><a href="coding.html#hex3">Punchy Game</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a href="about.html">About</a></li>
+                    <li class="menu-item"><a href="contact.html">Contact</a></li>
+                </ul></div>
+        </nav>
+    </header><!-- .masthead -->
+    <br>
+    <main class="main-area">
+        <div class="icon">
+            <img src="acknee_inc/icon.png" alt="project logo">
+        </div>
+        <div class="describe-content">
+            <div class="about">
+                <h2>Acknee Inc.</h2>
+                <p><b>Date:</b> 3/22/2017-6/5/2017</p>
+                <p><b>My Role:</b> Producer, Programmer</p>
+                <p><b>Project Type:</b> Game</p>
+                <p><b>Languages/Engines/Tools:</b> Zero Engine, ZilchScript</p>
+            </div>
+            <div class="actions" style="margin-top:0px;">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/CJOzMdI7Goo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="highlight">
+                <p>Working with a team of artists allowed me to focus on game features, instead of splitting my efforts with art and coding.</p>
+            </div>
+            <div class="description">
+                <p>In this game, players can confront or try to evade attackers in space, while raising funds to assemble a rocket that can take them home. Oh, and there's a cyborg space horse that talks with aliens to find good deals on cookies and rocket pieces.</p>
+            </div>
+            <div class="images">
+                <div class="swiper-container swiper1">
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="acknee_inc/shiploop.gif" title="Deep Space Rocket Assembly" alt="Deep Space Rocket Assembly"></div>
+                    <div class="swiper-slide"><img src="acknee_inc/Horse.png" title="Cyborg Space Horse" alt="Cyborg Space Horse Sprite"></div>
+                    <div class="swiper-slide"><img src="acknee_inc/ship.png" title="Default Enemy Ship" alt="Default Enemy Ship Sprite"></div>
+                    <div class="swiper-slide"><img src="acknee_inc/enemai.png" title="Strong Enemy Ship" alt="Strong Enemy Ship Sprite"></div>
+                    <div class="swiper-slide"><img src="acknee_inc/enemy.png" title="Fast Enemy Ship" alt="Fast Enemy Ship Sprite"></div>
+                    <div class="swiper-slide"><img src="acknee_inc/goop.png" title="Friendly Goop Trader" alt="Friendly Goop Trader Sprite"></div>
+                    <div class="swiper-slide"><img src="acknee_inc/tweet.png" title="Excitable Tweet Trader" alt="Excitable Tweet Trader Sprite"></div>
+                    <div class="swiper-slide"><img src="acknee_inc/merchant.png" title="Wise Merchant" alt="Wise Merchant Sprite"></div>
+                    <div class="swiper-slide"><img src="acknee_inc/philbert.png" title="Philbert" alt="Philbert Sprite"></div>
+                    </div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+            <div id="screenshots" class="slide-screenshot">
+                <h2>Game Screenshots</h2>
+                <div class="swiper-container swiper2">
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="acknee_inc/visiting_planets.png" title="Visiting an Alien City" alt="Visiting an Alien City Screenshot"></div>
+                    <div class="swiper-slide"><img src="acknee_inc/trading.png" title="Trading with Aliens" alt="Trading with Aliens Image"></div>
+                    <div class="swiper-slide"><img src="acknee_inc/exploration_1.png" title="Exploring Planets" alt="Exploring Planets Screenshot 1"></div>
+                    <div class="swiper-slide"><img src="acknee_inc/exploration_2.png" title="Exploring Planets" alt="Exploring Planets Screenshot 2"></div>
+                    <div class="swiper-slide"><img src="acknee_inc/space_fight_easy.png" title="Basic Space fight" alt="Basic Space Fight Screenshot"></div>
+                    <div class="swiper-slide"><img src="acknee_inc/space_fight_hard.png" title="Intense Space Fight Against Many Aliens" alt="Intense Space Fight Screenshot"></div>
+                    <div class="swiper-slide"><iframe width="100%" height="700px" src="https://www.youtube.com/embed/CJOzMdI7Goo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    </div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                
+            </div>
+        </div>
+    </main><!-- .main-area -->
+
+    <footer class="footer-area">
+        © Copyright 2020 Nathan Taylor
+    </footer>
+
+    <!-- Scripts for accessible mobile-first navigation -->
+    <script   src="https://code.jquery.com/jquery-3.4.1.min.js"   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="   crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/navigation.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper1', {
+            slidesPerView: 2,
+            spaceBetween: 30,
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+        var fadeSwiper = new Swiper('.swiper2', {
+            spaceBetween: 30,
+            effect: 'fade',
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+
+</body>
+
+</html>
