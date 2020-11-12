@@ -30,7 +30,9 @@ body {
 .hexagon:hover {
     background-color: hsla(183, 50%, 70%, 1);
 }
-
+.hexagon:hover .hex-text {
+    font-weight: bold;
+}
 .hex-text {
     background-color: rgba(27, 187, 217, 0.9);
     margin: auto;
